@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>FIT2102 A1 2023</title>
+  </head>
+  <body>
+    <h1>TETRIS</h1>
+    <main id="main" class="flex row">
+      <svg id="svgCanvas">
+        <!-- game over text box -->
+        <g id="gameOver" visibility="hidden">
+          <rect x="10" y="120" fill="white" height="85" width="180"></rect>
+          <text x="36" y="150">Game Over</text>
+          <text x="14" y="190" font-size="16">Press R to Restart</text>
+        </g>
+      </svg>
+      <div id="sideBar" class="flex col">
+        <svg id="svgPreview"></svg>
+        <div id="info" class="flex col">
+          <div class="text">
+            <span class="left">Level: </span>
+            <span class="right" id="levelText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Score: </span>
+            <span class="right" id="scoreText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Highscore: </span>
+            <span class="right" id="highScoreText">...</span>
+          </div>
+          <br>
+          <div class="text">
+            <span class="left">L/R/&#8681;</span>
+            <span class="right">A/D/S</span>
+          </div>
+          <div class="text">
+            <span class="left">Drop</span>
+            <span class="right">Space</span>
+          </div>
+          <div class="text">
+            <span class="left">L/R Rotate</span>
+            <span class="right">Q/E</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
